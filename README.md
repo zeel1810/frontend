@@ -20,5 +20,8 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
 
 ## Prerequisites/Setup Requirements
 
-### Hardware Requirements  
+### Software Requirements
+-  Install Nodejs >= v20.14.0
+    - Download the [Node Server] (https://nodejs.org/en/download/package-manager).
+
 
