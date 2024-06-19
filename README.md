@@ -1,4 +1,4 @@
-# Wi-Fi - Azure IoT MQTT Client Application
+# Dashboard Application
 
 ## Table of Contents
 
@@ -12,4 +12,13 @@
 - [Test the Application](#test-the-application)
 - [Steps to execute application](#follow-the-steps-below-for-successful-execution-of-the-application)
 - [Appendix](#appendix)
-- [Documentation](#documentation) 
+- [Documentation](#documentation)
+
+## Purpose/Scope
+
+This dashboard application demonstrates the chart reprenstation of Temperature, Humidity, Elevation, Accelerometer and Gyroscope reading.It will show latest 10 data points on chart.Also it will contain download feature to download session data and GPX file.
+
+## Prerequisites/Setup Requirements
+
+### Hardware Requirements  
+
