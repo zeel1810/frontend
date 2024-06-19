@@ -4,9 +4,7 @@
 
 - [Purpose/Scope](#purposescope)
 - [Prerequisites/Setup Requirements](#prerequisitessetup-requirements)
-  - [Hardware Requirements](#hardware-requirements)
   - [Software Requirements](#software-requirements)
-  - [Setup Diagram](#setup-diagram)
 - [Getting Started](#getting-started)
 - [Application Build Environment](#application-build-environment)
 - [Test the Application](#test-the-application)
@@ -22,6 +20,11 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
 
 ### Software Requirements
 -  Install Nodejs >= v20.14.0
-    - Download the [Node Server] (https://nodejs.org/en/download/package-manager).
+    - Download the [Node Server](https://nodejs.org/en/download/package-manager).
+    - Run the Installer
+    - Follow the Setup Wizard to finish installation
+    - Run below command to check installed version
+      
+       node --version
 
 
