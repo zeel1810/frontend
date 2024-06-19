@@ -6,8 +6,6 @@
 - [Prerequisites/Setup Requirements](#prerequisitessetup-requirements)
   - [Software Requirements](#software-requirements)
 - [Getting Started](#getting-started)
-- [Application Build Environment](#application-build-environment)
-- [Test the Application](#test-the-application)
 - [Steps to execute application](#follow-the-steps-below-for-successful-execution-of-the-application)
 - [Appendix](#appendix)
 - [Documentation](#documentation)
@@ -31,8 +29,12 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
 - Azure App Registration
     - Login to Azure Account with your credentials on [Azure Portal](https://portal.azure.com/)
     - Browse to Home > App registrations and select New registration.
-    - Provide necessary details (Name, choose single/multi-tenant), set redirect uri-
+    - Provide necessary details (Name, Choose Account type as Single/Multi-tenant), set redirect uri-(http://localhost:5173)
+      
       ![alt text](https://learn.microsoft.com/en-us/entra/identity-platform/media/quickstart-register-app/portal-02-app-reg-01.png#lightbox)
+
+     - After providing above details click on Register.
+     - 
 
 
 
