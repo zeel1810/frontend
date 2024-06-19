@@ -25,6 +25,14 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
     - Follow the Setup Wizard to finish installation
     - Run below command to check installed version
       
-       node --version
+        ```c
+    	 node --version     
+    	```
+- Azure App Registration
+    - Login to Azure Account with your credentials on [Azure Portal](https://portal.azure.com/)
+    - Browse to Home > App registrations and select New registration.
+    - Provide necessary details (Name, choose single/multi-tenant), set redirect uri-
+      ![alt text](https://learn.microsoft.com/en-us/entra/identity-platform/media/quickstart-register-app/portal-02-app-reg-01.png#lightbox)
+
 
 
