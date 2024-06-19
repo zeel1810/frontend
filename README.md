@@ -5,7 +5,6 @@
 - [Purpose/Scope](#purposescope)
 - [Prerequisites/Setup Requirements](#prerequisitessetup-requirements)
   - [Software Requirements](#software-requirements)
-- [Getting Started](#getting-started)
 - [Steps to execute application](#follow-the-steps-below-for-successful-execution-of-the-application)
 - [Appendix](#appendix)
 - [Documentation](#documentation)
@@ -41,7 +40,7 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
      - After providing above details click on Register.
      - Then Copy the Application (client) ID and Directory (tenant) ID paste it on below mentioned path
 
-  ##S
+## Steps to Execute Application
 
 
 
