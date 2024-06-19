@@ -29,7 +29,12 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
 - Azure App Registration
     - Login to Azure Account with your credentials on [Azure Portal](https://portal.azure.com/)
     - Browse to Home > App registrations and select New registration.
-    - Provide necessary details (Name, Choose Account type as Single/Multi-tenant), set redirect uri-(http://localhost:5173)
+    - Provide necessary details
+        - Name of your choice
+        - Choose account type as Accounts in this organizational directory only (Single tenant)
+        - Redirect URI
+            - Select platform as  Single-page application (SPA)
+            - Redirect Url as (http://localhost:5173)
       
       ![alt text](https://learn.microsoft.com/en-us/entra/identity-platform/media/quickstart-register-app/portal-02-app-reg-01.png#lightbox)
 
