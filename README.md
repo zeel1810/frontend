@@ -70,7 +70,7 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
 
     ![login_page](images/login-page.png)
 
-  - Click on login button and it will open Microsoft login popup, enter your     credentials
+  - Click on login button and it will open Microsoft login popup and enter your credentials
 
     ![login_mfa](images/login-mfa.png)
   
