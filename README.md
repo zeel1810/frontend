@@ -54,6 +54,19 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
     	 VITE_CLIENT_ID= "Application (client) ID"
        VITE_TENANT_ID= "Directory (tenant) ID"  
     	```
+  ## Steps to execute application
+  - Go to [project-root-folder]/dashboard/frontend
+  - Open Terminal/Cmd/Poweshell/Bash Here
+  - Run below command to install all dependencies
+     ```bash
+     npm install
+     ```
+  - Run below command to start dashboard application
+      ```bash
+     npm run dev
+     ```
+  - After running above commands you can open your chrome browser and type http://localhost:5173/ where you can see login Page of our dashboard application
+ 
 
 
 
