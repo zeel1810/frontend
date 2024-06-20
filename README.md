@@ -7,7 +7,7 @@
   - [Hardware Requirements](#hardware-requirements)
   - [Software Requirements](#software-requirements)
 - [Getting Started](#getting-started)
-- [Steps to execute application](#steps_to_execute_application)
+- [Steps to execute application](#steps-to-execute-application)
 
 ## Purpose/Scope
 
