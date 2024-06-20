@@ -42,9 +42,13 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
       ![alt text](https://learn.microsoft.com/en-us/entra/identity-platform/media/quickstart-register-app/portal-02-app-reg-01.png#lightbox)
 
      - After providing above details click on Register.
-     - Then Copy the Application (client) ID and Directory (tenant) ID paste it on below mentioned path
+     - Then Copy the Application (client) ID and Directory (tenant) ID paste which we wil required when setting up 
+       environment file
 
-## Steps to Execute Application
+ ## Getting Started
+ - Create .env file
+
+
 
 
 
