@@ -59,11 +59,11 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
   - Go to [project-root-folder]/dashboard/frontend
   - Open Terminal/Cmd/Poweshell/Bash Here
   - Run below command to install all dependencies
-     ```bash
+     ```c
      npm install
      ```
   - Run below command to start dashboard application
-      ```bash
+      ```c
      npm run dev
      ```
   - After running above commands you can open your chrome browser and type http://localhost:5173/ where you can see login page of our dashboard application.
