@@ -51,9 +51,9 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
     - Create .env file
     - Add Application (client) ID and Directory (tenant) ID details on .env file which we get while azure app registration
   
-        ```c
-    	 VITE_CLIENT_ID="Application (client) ID"
-       VITE_TENANT_ID="Directory (tenant) ID"  
+        ```bash
+    	 VITE_CLIENT_ID= "Application (client) ID"
+       VITE_TENANT_ID= "Directory (tenant) ID"  
     	```
 
 
