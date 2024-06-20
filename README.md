@@ -49,13 +49,12 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
  - Create and configured .env file
     - Go to [project-root-folder]/dashboard/frontend
     - Create .env file
-    - Add pplication (client) ID and Directory (tenant) ID details on .env file which we get while azure app registration
-
-      ```c 
-  	VITE_CLIENT_ID="Application (client) ID"
-    VITE_TENANT_ID="Directory (tenant) ID"
-   
-  	```
+    - Add Application (client) ID and Directory (tenant) ID details on .env file which we get while azure app registration
+  
+        ```c
+    	 VITE_CLIENT_ID="Application (client) ID"
+       VITE_TENANT_ID="Directory (tenant) ID"  
+    	```
 
 
 
