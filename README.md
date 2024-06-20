@@ -66,7 +66,8 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
       ```bash
      npm run dev
      ```
-  - After running above commands you can open your chrome browser and type http://localhost:5173/ where you can see login Page of our dashboard application
+  - After running above commands you can open your chrome browser and type http://localhost:5173/ where you can see login page of our dashboard application.
+
  
 
 
