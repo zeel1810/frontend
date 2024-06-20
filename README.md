@@ -38,7 +38,7 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
             - Select platform as  Single-page application (SPA)
             - Redirect Url as (http://localhost:5173)
       
-      ![alt text](https://learn.microsoft.com/en-us/entra/identity-platform/media/quickstart-register-app/portal-02-app-reg-01.png#lightbox)
+      ![azure_app_registration](images/azure-app-registration.png)
 
      - After providing above details click on Register.
      - Then make a note of the Application (client) ID and Directory (tenant) ID  which we will required when setting up 
@@ -50,7 +50,7 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
     - Create .env file
     - Add Application (client) ID and Directory (tenant) ID details on .env file which we get while azure app registration
   
-        ```bash
+        ```c
     	 VITE_CLIENT_ID= "Application (client) ID"
        VITE_TENANT_ID= "Directory (tenant) ID"  
     	```
@@ -68,9 +68,20 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
      ```
   - After running above commands you can open your chrome browser and type http://localhost:5173/ where you can see login page of our dashboard application.
 
+    ![login_page](images/login-page.png)
+
+  - Click on login button and it will open Microsoft login popup, enter your     credentials
+
+    ![login_mfa](images/login-mfa.png)
+  
+  - After successful login you will see dashboard page as below where you will see charts for Temperature, Humidity, Elevation ,Satellites, Accelerometer, Gyroscope and Wifi details.
+
+   ![dashboard-1](images/dashboard-1.png)
+
+   ![dashboard-2](images/dashboard-2.png)
+
+
+
+
+
  
-
-
-
-
-
