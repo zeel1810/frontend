@@ -42,11 +42,20 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
       ![alt text](https://learn.microsoft.com/en-us/entra/identity-platform/media/quickstart-register-app/portal-02-app-reg-01.png#lightbox)
 
      - After providing above details click on Register.
-     - Then Copy the Application (client) ID and Directory (tenant) ID paste which we wil required when setting up 
-       environment file
+     - Then make a note of the Application (client) ID and Directory (tenant) ID  which we will required when setting up 
+       environment file.
 
  ## Getting Started
- - Create .env file
+ - Create and configured .env file
+    - Go to [project-root-folder]/dashboard/frontend
+    - Create .env file
+    - Add pplication (client) ID and Directory (tenant) ID details on .env file which we get while azure app registration
+
+      ```c 
+  	VITE_CLIENT_ID="Application (client) ID"
+    VITE_TENANT_ID="Directory (tenant) ID"
+   
+  	```
 
 
 
