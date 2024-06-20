@@ -4,9 +4,10 @@
 
 - [Purpose/Scope](#purposescope)
 - [Prerequisites/Setup Requirements](#prerequisitessetup-requirements)
+  - [Hardware Requirements](#hardware-requirements)
   - [Software Requirements](#software-requirements)
+- [Getting Started](#getting-started)
 - [Steps to execute application](#follow-the-steps-below-for-successful-execution-of-the-application)
-- [Appendix](#appendix)
 - [Documentation](#documentation)
 
 ## Purpose/Scope
@@ -14,6 +15,9 @@
 This dashboard application demonstrates the chart reprenstation of Temperature, Humidity, Elevation, Accelerometer and Gyroscope reading.It will show latest 10 data points on chart.Also it will contain download feature to download session data and GPX file.
 
 ## Prerequisites/Setup Requirements
+
+### Hardware Requirements
+- A Windows/Linux/Mac PC
 
 ### Software Requirements
 -  Install Nodejs >= v20.14.0
