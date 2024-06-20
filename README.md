@@ -46,7 +46,7 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
        environment file.
 
  ## Getting Started
- - Create and configured .env file
+ - Create and configure .env file
     - Go to [project-root-folder]/dashboard/frontend
     - Create .env file
     - Add Application (client) ID and Directory (tenant) ID details on .env file which we get while azure app registration
