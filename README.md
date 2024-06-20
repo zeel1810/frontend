@@ -8,7 +8,6 @@
   - [Software Requirements](#software-requirements)
 - [Getting Started](#getting-started)
 - [Steps to execute application](#follow-the-steps-below-for-successful-execution-of-the-application)
-- [Documentation](#documentation)
 
 ## Purpose/Scope
 
