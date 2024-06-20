@@ -76,9 +76,9 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
   
   - After successful login you will see dashboard page as below where you will see charts for Temperature, Humidity, Elevation ,Satellites, Accelerometer, Gyroscope and Wifi details.
 
-   ![dashboard-1](images/dashboard-1.png)
+    ![dashboard-1](images/dashboard-1.png)
 
-   ![dashboard-2](images/dashboard-2.png)
+    ![dashboard-2](images/dashboard-2.png)
 
 
 
