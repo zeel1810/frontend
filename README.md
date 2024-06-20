@@ -54,7 +54,7 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
     	 VITE_CLIENT_ID= "Application (client) ID"
        VITE_TENANT_ID= "Directory (tenant) ID"  
     	```
-  ## Steps to execute application\
+  ## Steps to execute application
   
   - Go to [project-root-folder]/dashboard/frontend
   - Open Terminal/Cmd/Poweshell/Bash Here
