@@ -10,7 +10,7 @@
 - [Steps to execute application](#steps-to-execute-application)
 
 ## Purpose/Scope
-
+ss
 This dashboard application demonstrates the chart reprenstation of Temperature, Humidity, Elevation, Accelerometer and Gyroscope reading.It will show latest 10 data points on chart.Also it will contain download feature to download session data and GPX file.
 
 ## Prerequisites/Setup Requirements
