@@ -17,7 +17,7 @@ This ReadMe file demonstrate steps to set up backend and frontend to run the das
   - [Azure Cloud Configuration](#azure-cloud-configuration)
   - [Azure App Registration](#azure-app-registration)
 - [Getting Started](#getting-started)
-- [Getting Started_Dashboard](#getting-started-dashboard)
+- [Getting Started Dashboard](#getting-started-dashboard)
 - [Run the Application](#run-the-application)
 - [Test the Application](#test-the-application)
 - [API Documentation](#api-documentation)
