@@ -107,6 +107,19 @@ Also it demonstrates the chart reprenstation of Temperature, Humidity, Elevation
   DEFAULT_DEVICE_ID="ajeet-si-labs0011"
 ```
 
+## Getting Started_Dashboard
+
+- Create and configure .env file
+
+  - Go to [project-root-folder]/dashboard/frontend
+  - Create .env file
+  - Add Application (client) ID and Directory (tenant) ID details on .env file which we get while azure app registration
+
+    ```c
+    VITE_CLIENT_ID= "Application (client) ID"
+    VITE_TENANT_ID= "Directory (tenant) ID"
+    ```
+
 ## Run the Application
 
 1. Go to [project-root-folder]/dashboard/backend
@@ -141,19 +154,6 @@ $ npm run test:cov
 ## API Documentation
 
 http://localhost:3005/api/v1/swagger
-
-## Getting Started_Dashboard
-
-- Create and configure .env file
-
-  - Go to [project-root-folder]/dashboard/frontend
-  - Create .env file
-  - Add Application (client) ID and Directory (tenant) ID details on .env file which we get while azure app registration
-
-    ```c
-    VITE_CLIENT_ID= "Application (client) ID"
-    VITE_TENANT_ID= "Directory (tenant) ID"
-    ```
 
 ## Steps to execute application
 
