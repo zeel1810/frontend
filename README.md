@@ -52,22 +52,11 @@ Also it demonstrates the chart reprenstation of Temperature, Humidity, Elevation
 > - Path of this readme file is [root-folder]/azure_cloud/README_CLOUD.md
 
 ### Azure App Registration
-- Login to Azure Account with your credentials on [Azure Portal](https://portal.azure.com/)
-  - Browse to Home > App registrations and select New registration.
-  - Provide necessary details
 
-    - Name of your choice
-    - Choose account type as Accounts in this organizational directory only (Single tenant)
-    - Redirect URI
-      - Select platform as Single-page application (SPA)
-      - Redirect Url as (http://localhost:5173)
-
-    ![azure_app_registration](frontend/images/azure-app-registration.png)
-
-  - After providing above details click on Register.
-  - Then make a note of the Application (client) ID and Directory (tenant) ID which we will required when setting up
-    environment file.
-
+> **Note:**
+>
+> - Please follow the azure cloud readme to setup cloud configuration
+> - Path of this readme file is [root-folder]/azure_cloud/README_CLOUD.md
 
 ## Installation Of nodejs Version V20.14.0
 
