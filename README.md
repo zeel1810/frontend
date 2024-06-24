@@ -17,6 +17,7 @@ This ReadMe file demonstrate steps to set up backend and frontend to run the das
   - [Azure Cloud Configuration](#azure-cloud-configuration)
   - [Azure App Registration](#azure-app-registration)
 - [Getting Started](#getting-started)
+- [Getting Started_Dashboard](#getting-started-dashboard)
 - [Run the Application](#run-the-application)
 - [Test the Application](#test-the-application)
 - [API Documentation](#api-documentation)
@@ -141,59 +142,7 @@ $ npm run test:cov
 
 http://localhost:3005/api/v1/swagger
 
-## Frontend
-
-## Table of Contents
-
-- [Purpose/Scope](#purposescope)
-- [Prerequisites/Setup Requirements](#prerequisitessetup-requirements)
-  - [Hardware Requirements](#hardware-requirements)
-  - [Software Requirements](#software-requirements)
-- [Getting Started](#getting-started)
-- [Steps to execute application](#steps-to-execute-application)
-
-## Purpose/Scope
-
-This dashboard application demonstrates the chart reprenstation of Temperature, Humidity, Elevation, Accelerometer and Gyroscope reading.It will show latest 10 data points on chart.Also it will contain download feature to download session data and GPX file.
-
-## Prerequisites/Setup Requirements
-
-### Hardware Requirements
-
-- A Windows PC
-
-### Software Requirements
-
-- Install Nodejs >= v20.14.0
-
-  - Download the [Node Server](https://nodejs.org/en/download/package-manager).
-  - Run the Installer
-  - Follow the Setup Wizard to finish installation
-  - Run below command to check installed version
-
-    ```c
-    node --version
-    ```
-
-- Azure App Registration
-
-  - Login to Azure Account with your credentials on [Azure Portal](https://portal.azure.com/)
-  - Browse to Home > App registrations and select New registration.
-  - Provide necessary details
-
-    - Name of your choice
-    - Choose account type as Accounts in this organizational directory only (Single tenant)
-    - Redirect URI
-      - Select platform as Single-page application (SPA)
-      - Redirect Url as (http://localhost:5173)
-
-    ![azure_app_registration](frontend/images/azure-app-registration.png)
-
-  - After providing above details click on Register.
-  - Then make a note of the Application (client) ID and Directory (tenant) ID which we will required when setting up
-    environment file.
-
-## Getting Started
+## Getting Started_Dashboard
 
 - Create and configure .env file
 
