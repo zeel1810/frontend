@@ -18,7 +18,8 @@ This ReadMe file demonstrate steps to set up backend and frontend to run the das
   - [Azure App Registration](#azure-app-registration)
 - [Getting Started](#getting-started)
 - [Getting Started Dashboard](#getting-started-dashboard)
-- [Run the Application](#run-the-application)
+- [Run the Backend Application](#run-the-backend-application)
+- [Run the Dashboard Application](#run-the-dashboard-application)
 - [Test the Application](#test-the-application)
 - [API Documentation](#api-documentation)
 
@@ -51,6 +52,21 @@ Also it demonstrates the chart reprenstation of Temperature, Humidity, Elevation
 > - Path of this readme file is [root-folder]/azure_cloud/README_CLOUD.md
 
 ### Azure App Registration
+- Login to Azure Account with your credentials on [Azure Portal](https://portal.azure.com/)
+  - Browse to Home > App registrations and select New registration.
+  - Provide necessary details
+
+    - Name of your choice
+    - Choose account type as Accounts in this organizational directory only (Single tenant)
+    - Redirect URI
+      - Select platform as Single-page application (SPA)
+      - Redirect Url as (http://localhost:5173)
+
+    ![azure_app_registration](frontend/images/azure-app-registration.png)
+
+  - After providing above details click on Register.
+  - Then make a note of the Application (client) ID and Directory (tenant) ID which we will required when setting up
+    environment file.
 
 
 ## Installation Of nodejs Version V20.14.0
@@ -120,7 +136,7 @@ Also it demonstrates the chart reprenstation of Temperature, Humidity, Elevation
     VITE_TENANT_ID= "Directory (tenant) ID"
     ```
 
-## Run the Application
+## Run the Backend Application
 
 1. Go to [project-root-folder]/dashboard/backend
 2. Open Terminal/Cmd/Poweshell/Bash Here
@@ -140,22 +156,7 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-
-## Test the Application
-
-```bash
-# unit tests
-$ npm run test
-
-# test coverage
-$ npm run test:cov
-```
-
-## API Documentation
-
-http://localhost:3005/api/v1/swagger
-
-## Steps to execute application
+## Steps to execute Frontend application
 
 - Go to [project-root-folder]/dashboard/frontend
 - Open Terminal/Cmd/Poweshell/Bash Here
@@ -180,3 +181,18 @@ http://localhost:3005/api/v1/swagger
   ![dashboard-1](frontend/images/dashboard-1.png)
 
   ![dashboard-2](frontend/images/dashboard-2.png)
+
+
+## Test the Application
+
+```bash
+# unit tests
+$ npm run test
+
+# test coverage
+$ npm run test:cov
+```
+
+## API Documentation
+
+http://localhost:3005/api/v1/swagger
