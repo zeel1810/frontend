@@ -156,7 +156,7 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-## Steps to execute Frontend application
+## Run the Frontend application
 
 - Go to [project-root-folder]/dashboard/frontend
 - Open Terminal/Cmd/Poweshell/Bash Here
