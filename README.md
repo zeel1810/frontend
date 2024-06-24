@@ -6,14 +6,7 @@
 
 ## Description
 
-Si-labs projects
-
-## Sections
-
-- [Backend](#backend)
-- [Frontend](#frontend)
-
-## Backend
+This ReadMe file demonstrate steps to set up backend and frontend to run the dashboard application.
 
 ### Table of Contents
 
@@ -22,6 +15,7 @@ Si-labs projects
   - [Hardware Requirements](#hardware-requirements)
   - [Software Requirements](#software-requirements)
   - [Azure Cloud Configuration](#azure-cloud-configuration)
+  - [Azure App Registration](#azure-app-registration)
 - [Getting Started](#getting-started)
 - [Run the Application](#run-the-application)
 - [Test the Application](#test-the-application)
@@ -30,19 +24,22 @@ Si-labs projects
 ## Purpose/Scope
 
 This application demonstrates how to configure the Azure device with iot hub and how to receive all the device sensor message on backend node server and display this on client side.
+Also it demonstrates the chart reprenstation of Temperature, Humidity, Elevation, Accelerometer and Gyroscope reading.It will show latest 10 data points on chart.Also it will contain download feature to download session data and GPX file.
 
 ## Prerequisites
 
 ### Hardware Requirements
 
 - A Windows/Linux/Mac PC
-- A Wireless Access Point
+- System config
+  - Processor:- 1 GHZ or faster, 32 bit or 64 bit processor.
+- Active Internet connection
 
 ### Software Requirements
 
-- Install Nodejs >= v20.14.0
+- Install Nodejs >= v20.14.0 LTS
   - Install [Nodejs](#hardware-requirements)
-- Install MongoDB >= 7.0
+- Install MongoDB >= 7.0 LTS
   - Install [MongoDB](#hardware-requirements)
 
 ### Azure Cloud Configuration
@@ -50,7 +47,10 @@ This application demonstrates how to configure the Azure device with iot hub and
 > **Note:**
 >
 > - Please follow the azure cloud readme to setup cloud configuration
-> - Path of this readme file is [root-folder]/azure/readme.md
+> - Path of this readme file is [root-folder]/azure_cloud/README_CLOUD.md
+
+### Azure App Registration
+
 
 ## Installation Of nodejs Version V20.14.0
 
@@ -83,83 +83,28 @@ This application demonstrates how to configure the Azure device with iot hub and
 2. Create .env file
 3. Put all the provided environment value in .env file
 
-### Replace these environment variable With your actual value
+### Replace these environment variable With your actual value in backend .env file
+
+**Note:**
+
+- Refer Azure cloud readme to know all the steps to get these ENV values
+- Path of the Azure readme is [root-folder]/azure_cloud/README_CLOUD.md
+
+**Note:**
+
+- Path of the backend .env is
+  [root-folder]/dashboard/backend/.env
+- keep all the other env file as it it, update only these variables
 
 ```bash
-    # path of .env file is [root-folder]/dashboard/backend
+  STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=sa1sasyd;AccountKey=rn3fsfwfvfdQs2Hi3sqwcA99OsNLASPSRvnTXCotbEfsdfwersadasUf4CQfpOv1PQsfiujklhadscjnjkdf+AStW3+MGw==;EndpointSuffix=core.windows.net'
 
-    STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=sa1sasyd;AccountKey=rn3fsfwfvfdQs2Hi3sqwcA99OsNLASPSRvnTXCotbEfsdfwersadasUf4CQfpOv1PQsfiujklhadscjnjkdf+AStW3+MGw==;EndpointSuffix=core.windows.net'
+  CONTAINER_NAME='telemetry-event-checkpoint'
 
-    CONTAINER_NAME='telemetry-event-checkpoint'
+  IOT_EVENT_HUB_ENDPOINT='Endpoint=sb://silajndhs.servicebus.windows.net/;SharedAccessKeyName=telemetry-event-listen-policy;SharedAccessKey=m4hsjfhksnjfn/ddskhkjjsd+asdasdAEhGdajNM=;EntityPath=telemetry-event'
 
-    IOT_EVENT_HUB_ENDPOINT='Endpoint=sb://silajndhs.servicebus.windows.net/;SharedAccessKeyName=telemetry-event-listen-policy;SharedAccessKey=m4hsjfhksnjfn/ddskhkjjsd+asdasdAEhGdajNM=;EntityPath=telemetry-event'
-
-    DEFAULT_DEVICE_ID="ajeet-si-labs0011"
+  DEFAULT_DEVICE_ID="ajeet-si-labs0011"
 ```
-
-### Follow these screenshot to get envrionment value
-
-1. Follow this step to get this [ STORAGE_CONNECTION_STRING ]
-
-- Go to storage account
-  ![storage account1](backend/readme-assets/storage-account1.jpg)
-
-- Create a new storage account
-  ![create-storage1](backend/readme-assets/create-storage1.jpg)
-
-- Click on new created storage account
-  ![iot-hub-storage1](backend/readme-assets/iot-hub-storage1.jpg)
-
-- Click on access key and copy connection string
-  ![iot-hub-storage2](backend/readme-assets/iot-hub-storage2.jpg)
-
-- Reaplce STORAGE_CONNECTION_STRING value with your copied string in .env file
-
-2. CONTAINER_NAME
-
-- Go to storage account
-  ![storage account](backend/readme-assets/storage-account.jpg)
-
-- Create a new storage account
-  ![create-storage1](backend/readme-assets/create-storage1.jpg)
-
-- Click on new created storage account
-  ![iot-hub-storage1](backend/readme-assets/iot-hub-storage1.jpg)
-
-- Click on containers and create new containers
-  ![container2](backend/readme-assets/container2.jpg)
-
-- Copy new containers name
-  ![container3](backend/readme-assets/container3.jpg)
-
-- Reaplce CONTAINER_NAME value with your copied string in .env file
-
-2. IOT_EVENT_HUB_ENDPOINT
-
-- Go to IoT Hub
-  ![iot-hub1](backend/readme-assets/iot-hub1.jpg)
-
-- Create a new IoT Hub
-  ![iot-hub2](backend/readme-assets/iot-hub2.jpg)
-
-- Click on new created IoT Hub and then click on shared access policies and copy
-  primary connection string
-  ![iot-hub-connection-string](backend/readme-assets/iot-hub-connection-string.jpg)
-
-- Reaplce IOT_EVENT_HUB_ENDPOINT value with your copied string in .env file
-
-3. DEFAULT_DEVICE_ID
-
-- Go to IoT Hub
-  ![iot-hub1](backend/readme-assets/iot-hub1.jpg)
-
-- Got device and created new device
-  ![create-device1](backend/readme-assets/create-device1.jpg)
-
-- Copy new created deviceId
-  ![create-device2](backend/readme-assets/create-device2.jpg)
-
-- Reaplce DEFAULT_DEVICE_ID value with your copied string in .env file
 
 ## Run the Application
 
@@ -215,7 +160,7 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
 
 ### Hardware Requirements
 
-- A Windows/Linux/Mac PC
+- A Windows PC
 
 ### Software Requirements
 
@@ -266,12 +211,12 @@ This dashboard application demonstrates the chart reprenstation of Temperature, 
 - Go to [project-root-folder]/dashboard/frontend
 - Open Terminal/Cmd/Poweshell/Bash Here
 - Run below command to install all dependencies
-  ```c
-  npm install
+  ```
+    npm install
   ```
 - Run below command to start dashboard application
-  ```c
-  npm run dev
+  ```
+   npm run dev
   ```
 - After running above commands you can open your chrome browser and type http://localhost:5173/ where you can see login page of our dashboard application.
 
